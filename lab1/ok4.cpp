@@ -2,7 +2,7 @@
 // Created by satyamchauhan on 31/08/26.
 //
 #include<iostream>
-
+using satyam = int;
 void q4(int x ) {
     int arr[] = {3,5,8,3,2,1,4,3,6,3,3,5,2,1,7,2};
     int cnt = 0;
@@ -12,7 +12,7 @@ void q4(int x ) {
     std::cout<<cnt;
 }
 
-int main() {
+satyam main() {
     q4(7);
 
 
