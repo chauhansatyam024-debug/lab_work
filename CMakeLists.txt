@@ -10,4 +10,5 @@ add_executable(dsa_lab
         lab1/ok4.cpp
         lab1/reverse1.cpp
         lab1/two_sum.cpp
+        lab1/duplicate.cpp
 )
