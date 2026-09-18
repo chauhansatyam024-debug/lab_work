@@ -15,12 +15,12 @@ int linearSearch(int arr[], int n, int key) {
 }
 
 int main() {
-    int arr[n] = {12,41,41,41,414,14,141,41,4,4,4,56,};
+    int arr[] = {12,41,41,41,414,14,141,41,4,4,4,56,};
 
     int key;
     cout << "key: ";
     cin >> key;
-
+    int n = 12;
     int pos = linearSearch(arr, n, key);
 
     if (pos != -1)
