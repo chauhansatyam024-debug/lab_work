@@ -28,7 +28,7 @@ int binarySearch(int arr[], int n, int key, int &comparisons) {
 
 int main() {
     int n;
-    cout << "elements: ";
+    cout << "elements:";
     cin >> n;
 
     int arr[n];
