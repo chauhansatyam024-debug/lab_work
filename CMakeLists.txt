@@ -27,4 +27,5 @@ add_executable(dsa_lab
         lab2/q11.cpp
         lab2/q12.cpp
         lab2/q13.cpp
+        lab2/q14.cpp
 )
