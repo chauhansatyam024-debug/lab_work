@@ -1,7 +1,7 @@
 
 #include<iostream>
 #include<algorithm>
-
+#include<iterator>
 // don't miss or forgot base case
 // first element
 void quickSort_1(int arr[] , int low , int high) {
