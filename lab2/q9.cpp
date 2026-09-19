@@ -57,7 +57,7 @@ void quicksort_last(int arr[] , int low , int high) {
 
 int main() {
     int arr[] ={34,25,2532,52,52,521,52,52,5};
-    int n = std::size(arr);
+    int n = std::size_t(arr);
 
     //quickSort_1(arr,0,n-1);
     quicksort_last(arr,0,n-1);
