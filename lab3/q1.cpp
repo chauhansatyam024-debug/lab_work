@@ -2,6 +2,8 @@
 // Created by satyamchauhan on 20/09/26.
 //
 #include <iostream>
+#include<algorithm>
+
 using namespace std;
 
 void printarr(int a[], int n) {
