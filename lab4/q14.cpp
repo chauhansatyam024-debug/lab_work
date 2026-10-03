@@ -1,33 +1,31 @@
 //
 // Created by satyamchauhan on 04/10/26.
 //
-
+//
+// Created by satyamchauhan on 03/10/26.
+//
 #include<iostream>
 
 struct node {
     int data;
     node *next;
-
-    node(int val) : data(val), next(nullptr) {
-    }
+    node  * prev;
+    node(int val) : data(val), next(nullptr) ,prev(nullptr) {}
 };
 
 class lst {
 public :
     node *head = nullptr;
-
+    node * tail = nullptr;
     void insertion(int x) {
         node *newnode = new node(x);
         if (!head) {
-            head = newnode;
+            head = tail = newnode;
             return;
         }
-
-        node *temp = head;
-        while (temp->next) {
-            temp = temp->next;
-        }
-        temp->next = newnode;
+        newnode->prev = tail;
+        tail->next = newnode;
+        tail = newnode;
     }
 
     void print() {
