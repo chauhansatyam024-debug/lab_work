@@ -55,4 +55,5 @@ add_executable(dsa_lab
         lab4/q8.cpp
         lab4/q9.cpp
         lab4/q10.cpp
+        lab4/q11.cpp
 )
