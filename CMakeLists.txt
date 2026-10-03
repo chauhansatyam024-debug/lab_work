@@ -47,4 +47,5 @@ add_executable(dsa_lab
         practice/okpractice_1.cpp
         lab4/q1.cpp
         lab4/q2.cpp
+        lab4/q3.cpp
 )
