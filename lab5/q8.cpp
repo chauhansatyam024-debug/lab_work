@@ -19,6 +19,7 @@ int main() {
         }
         else {
             if (chk.empty()) {
+                std::cout<<"wrong";
                 break;
             }
             int top = chk.top();
