@@ -25,17 +25,29 @@ public:
         std::cout<<root->val<<" ";
         inorder(root->right);
     }
+    node * deletion(node * root) {
+        if (root == nullptr){return nullptr;}
+
+        if (root->left == nullptr && root->right == nullptr){delete(root); return nullptr;}
+        root->left = deletion(root->left);
+        root->right = deletion(root->right);
+
+
+        return root;
+
+    }
 
 };
 satyam main() {
     tree tt;
     node * root = nullptr;
-    int i = 0;
-    int input = 0;
-    for (i;i<5;i++) {
-        std::cin>>input;
-        root = tt.insert(root,input);
+
+    for (int i = 0 ;i<5;i++) {
+
+        root = tt.insert(root,i);
     }
+    tt.inorder(root);
+    root = tt.deletion(root);
     tt.inorder(root);
 
     return 0;
