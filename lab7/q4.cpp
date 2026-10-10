@@ -28,11 +28,12 @@ public:
         return root;
     }
 
-    void preorder(node * root) {
+    void postorder(node * root) {
         if (root == nullptr){return ;}
+        postorder(root->left);
+
+        postorder(root->right);
         std::cout<<root->val<<" ";
-        preorder(root->left);
-        preorder(root->right);
     }
 
 };
@@ -45,7 +46,7 @@ int main() {
         root = bt.insertion(root,i);
     }
 
-    bt.preorder(root);
+    bt.postorder(root);
 
     return 0;
 }
