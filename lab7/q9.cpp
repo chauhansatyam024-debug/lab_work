@@ -1,7 +1,6 @@
 //
 // Created by satyamchauhan on 21/08/26.
 //
-using satyam = int;
 #include<iostream>
 struct node {
     int val;
@@ -27,10 +26,10 @@ public:
     }
     node * deletion(node * root) {
         if (root == nullptr){return nullptr;}
-
-        if (root->left == nullptr && root->right == nullptr){delete(root); return nullptr;}
         root->left = deletion(root->left);
         root->right = deletion(root->right);
+        if (root->left == nullptr && root->right == nullptr){delete(root); return nullptr;}
+
 
 
         return root;
@@ -38,7 +37,7 @@ public:
     }
 
 };
-satyam main() {
+int main() {
     tree tt;
     node * root = nullptr;
 
